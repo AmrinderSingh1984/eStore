@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-commerce Website</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav>
+            <div class="topnav" id="myTopnav">
+              <button  class="cartt" onclick="openHOME()">
+              HOME</button>
+                <button  class="cartt" onclick="openForm()">LOGIN</button>
+                <button  class="cartt" onclick="opennForm()">REGISTER</button>
+                <button id="cart" class="cartt" onclick="opencart()">CART</button>
+              </div>
+        </nav>
+    
+        
+
+
+<div class="form-popup" id="myForm">
+  <div class="form-container">
+    <h1>SIGN IN</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="lemail" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="lpassword" required>
+
+    <button  class="btn" onclick="login()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </div>
+</div>
+
+<div class="form-popup" id="myFormm">
+    <div class="form-container">
+      <h1>SIGN UP</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" required>
+
+      
+      <label for="psw"><b>Contact</b></label>
+      <input type="number" placeholder="Enter Password" id="contact" required>
+  
+      <button onclick="register()" class="btn">Register</button>
+      <button type="button" class="btn cancel" onclick="closeFormm()">Close</button>
+    </div>
+  </div>
+
+
+    <main id="main">
+      
+        <!-- Add more product cards here -->
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
